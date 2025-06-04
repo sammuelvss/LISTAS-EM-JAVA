@@ -1,0 +1,141 @@
+package treino;
+
+    import java.util.ArrayList;
+    import java.util.Collections;
+    import java.util.Scanner;
+    import java.util.List;
+
+    public class Lista5 {
+
+        public static void main(String[] args) {
+
+            // 01 Escreva um programa que exiba os números de 1 a 100, indicando se cada um é par ou ímpar.
+        /*for (int i = 1; i <= 100; i++){
+            if (i %2 == 0) {
+                System.out.println(i + " é par");
+            } else if (i %2 == 1){
+                System.out.println(i + " é ímpar");
+            }
+        }*/
+
+
+            //02 Solicite 10 números inteiros ao usuário e diga quantos deles são maiores que 100.
+
+        /*Scanner numeros = new Scanner(System.in);
+        int cont = 0;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("DIGITE UM NUMERO ("+ i + "):");
+            int num = numeros.nextInt();
+            if (num > 100) {
+                cont++;
+            }
+        }
+        System.out.println("tem " + cont + " numeros");*/
+
+
+            // 03 Leia 5 números inteiros e exiba apenas os números negativos.
+        /*Scanner numeros = new Scanner(System.in);
+        int cont = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("DIGITE UM NUMERO (" + i + "):");
+            int num = numeros.nextInt();
+            if (num < 0) {
+            cont++;}
+        }
+
+        System.out.println(" tem " + cont + " números negativos");*/
+
+
+            // 04 Solicite ao usuário um número positivo n. Em seguida, leia nos números inteiros e conte quantos são múltiplos de 3.
+        /*Scanner numeros = new Scanner(System.in);
+        int cont = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("DIGITE UM NUMERO (" + i + "):");
+            int num = numeros.nextInt();
+            if (num %3 == 0) {
+                cont++;  }
+            }
+        System.out.println("tem " + cont + " números múltiplos de 3");*/
+
+
+            // 05 Peça ao usuário um número inteiro e exiba todos os divisores ímpares desse número.
+        /* numeros = new Scanner(System.in);
+        System.out.println("DIGITE UM NÚMERO: ");
+        int num = numeros.nextInt();
+        for (int i = 1; i <= num; i++) {
+        if ((i %2 != 0) && (num % i == 0)) {
+                System.out.println(i);
+            }
+        }*/
+
+
+            // 06 Leia 10 números reais e conte quantos estão no intervalo [10, 20].
+        /*Scanner numeros = new Scanner(System.in);
+        int cont = 0;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("DIGITE UM NUMERO (" + i + "):");
+            int num = numeros.nextInt();
+            if (num > 10 && num < 20) {
+                cont++;}
+        }
+        System.out.println("tem " + cont + " números no intervalo [10, 20]");*/
+
+
+            // 07 Solicite ao usuário números inteiros até que ele digite um número negativo. Ao final, exiba quantos números pares foram digitados.
+            /*List<Integer> numpar = new ArrayList<>();
+            Scanner numeros = new Scanner(System.in);
+            int contpares = 0;
+            int cont = 0;
+            for (int i = 1; i >= 0; i++) {
+                System.out.println("DIGITE UM NUMERO " + i + ":");
+                int num = numeros.nextInt();
+                if (num < 0) {
+                    break;
+                }
+                numpar.add(i);
+            }
+                for (int nu : numpar) {
+                    if (nu % 2 == 0) {
+                        contpares++;
+                        System.out.println("Números pares: " + nu);
+                    }
+                }*/
+
+            // 08 Escreva um programa que peça a idade de 10 pessoas e conte quantas têm 18 anos ou mais.
+            /*Scanner numeros = new Scanner(System.in);
+            int cont = 0;
+            for (int i = 1; i <= 10; i++) {
+            System.out.println("DIGITE A IDADE " + i + ":");
+            int num = numeros.nextInt();
+            if (num >= 18){
+                cont++;
+            }
+            }
+            System.out.println("Têm " + cont + " pessoas com 18 anos ou mais ");*/
+
+
+            // 09 Leia 10 números inteiros e diga qual foi o menor número par lido.
+            /*Scanner numeros = new Scanner(System.in);
+            int menor;
+            int numpar;
+            int cont = Integer.MAX_VALUE;
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("DIGITE A IDADE " + i + ":");
+                int num = numeros.nextInt();
+                numpar = menor = num;
+                if (num % 2 == 0) {
+                    numpar = num;
+                } if (num %2 == 0) {
+                    if (numpar < cont) {
+                        cont = numpar;
+                    }
+                }
+            }
+                System.out.println("menor número par: " + cont);*/
+
+
+            // 10 Peça ao usuário um número inteiro positivo n e exiba os n primeiros números da sequência de Fibonacci.
+
+
+            }
+        }
