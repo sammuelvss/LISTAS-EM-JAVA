@@ -133,9 +133,19 @@ package treino;
             }
                 System.out.println("menor número par: " + cont);*/
 
-
+            
             // 10 Peça ao usuário um número inteiro positivo n e exiba os n primeiros números da sequência de Fibonacci.
-
+            /*Scanner numero = new Scanner(System.in);
+            System.out.println("DIGITE UM NÚMERO: ");
+            int num = numero.nextInt();
+            int primeiro = 0, segundo = 1;
+            System.out.println("os primeiros " + num + " números da sequência são:");
+            for (int i = 0; i < num; i++) {
+                System.out.println(primeiro + "");
+                int proximo = primeiro + segundo;
+                primeiro = segundo;
+                segundo = proximo;
+            }*/
 
             }
         }
