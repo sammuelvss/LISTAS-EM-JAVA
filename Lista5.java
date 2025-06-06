@@ -147,5 +147,65 @@ package treino;
                 segundo = proximo;
             }*/
 
+            
+            // 11 Peça ao usuário para digitar 10 números e exiba apenas os que forem primos.
+            /*Scanner numeros = new Scanner(System.in);
+            List<Integer> numprimo = new ArrayList<>();
+            int primo;
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("DIGITE UM NÚMERO " + i + ":");
+                int num = numeros.nextInt();
+                boolean ehprimo = true;
+                if (num <= 1) {
+                    ehprimo = false;
+                } else {
+                    for (int j = 2; j <= Math.sqrt(num); j++) {
+                        if (num % j == 0) {
+                            ehprimo = false;
+                            break;
+                        }
+                    }
+                }
+                if (ehprimo) {
+                    primo = num;
+                    numprimo.add(primo);
+                }
+            }
+            System.out.println("ESTES SÃO TODOS OS NÚMERO PRIMOS DIGITADOS: " + numprimo);*/
+
+
+            // 12 Solicite ao usuário um número inteiro n. Em seguida, peça n números e mostre qual foi o maior número par e o menor número ímpar digitados.
+            /*Scanner numeros = new Scanner(System.in);
+            System.out.println("DIGITE UM NÚMERO:");
+            int n = numeros.nextInt();
+            int cont1 = Integer.MIN_VALUE;
+            int cont2 = Integer.MAX_VALUE;
+            int numpar;
+            int numimpar;
+            for (int i = 1; i <= n; i++) {
+                System.out.println("AGORA DIGITE " + i + " NÚMEROS:");
+                int num = numeros.nextInt();
+                numpar = num;
+                numimpar = num;
+                if (num % 2 == 0 || num % 2 == 1) {
+                    numpar = num;
+                    numimpar = num;
+                }
+                if (num % 2 == 0) {
+                    if (numpar > cont1) {
+                        cont1 = numpar;
+                    }
+                }
+                if (num % 2 == 1) {
+                    if (numimpar < cont2) {
+                        cont2 = numimpar;
+                    }
+                }
+            }
+            System.out.println("O MAIOR NUMERO PAR FOI: " + cont1);
+            System.out.println("O MENOR NUMERO IMPAR FOI: " + cont2);*/
+
+            // 13 Solicite ao usuário a quantidade de alunos em uma sala. Para cada aluno, leia a nota (0 a 10). Informe quantos alunos estão aprovados (nota >= 7), em recuperação (nota >= 5 e < 7) e reprovados (nota < 5).
+            
             }
         }
