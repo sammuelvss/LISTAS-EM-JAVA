@@ -133,7 +133,7 @@ package treino;
             }
                 System.out.println("menor número par: " + cont);*/
 
-            
+
             // 10 Peça ao usuário um número inteiro positivo n e exiba os n primeiros números da sequência de Fibonacci.
             /*Scanner numero = new Scanner(System.in);
             System.out.println("DIGITE UM NÚMERO: ");
@@ -147,7 +147,7 @@ package treino;
                 segundo = proximo;
             }*/
 
-            
+
             // 11 Peça ao usuário para digitar 10 números e exiba apenas os que forem primos.
             /*Scanner numeros = new Scanner(System.in);
             List<Integer> numprimo = new ArrayList<>();
@@ -207,19 +207,34 @@ package treino;
 
             // 13 Solicite ao usuário a quantidade de alunos em uma sala. Para cada aluno, leia a nota (0 a 10). Informe quantos alunos estão aprovados (nota >= 7), em recuperação (nota >= 5 e < 7) e reprovados (nota < 5).
             Scanner alunos = new Scanner(System.in);
-        int cont = 0;
-        int aprovados;
-        int recuperados;
-        int reprovados;
-        System.out.println("DIGITE A QUANTIDADE DE ALUNOS: ");
-        int num = alunos.nextInt();
-        for (int i = 1; i <= num; i++) {
-            System.out.println("Coloque as notas do aluno " + i + ": ");
-            int notas = alunos.nextInt();
-        }
-        if (cont == num) {
+            int aprovados = 0;
+            int recuperados = 0;
+            int reprovados = 0;
+            System.out.println("DIGITE A QUANTIDADE DE ALUNOS: ");
+            int num = alunos.nextInt();
+            int notas = 0;
+            for (int i = 1; i <= num; i++) {
+                System.out.println("Coloque a nota do aluno " + i + ": ");
+                notas = alunos.nextInt();
+
+                if (notas >= 7) {
+                    aprovados++;
+                    System.out.println("tem " + aprovados + " alunos aprovados");
+                }
+                if (notas >= 5 && notas < 7) {
+                    recuperados++;
+                    System.out.println("tem " + recuperados + " alunos em recuperação");
+                }
+                if (notas < 5) {
+                    reprovados++;
+                    System.out.println("tem " + reprovados + " alunos reprovados");
+                }
+            }
+            System.out.println("------------RESULTADOS DOS " + num + " ALUNOS------------");
+            System.out.println( aprovados + " alunos aprovados ");
+            System.out.println( recuperados + " alunos em recuperação");
+
+
 
         }
-        
     }
-}
