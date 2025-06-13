@@ -1,9 +1,9 @@
 package treino;
 
-    import java.util.ArrayList;
-    import java.util.Collections;
+    //import java.util.ArrayList;
+    //import java.util.Collections;
     import java.util.Scanner;
-    import java.util.List;
+    //import java.util.List;
 
     public class Lista5 {
 
@@ -206,6 +206,20 @@ package treino;
             System.out.println("O MENOR NUMERO IMPAR FOI: " + cont2);*/
 
             // 13 Solicite ao usuário a quantidade de alunos em uma sala. Para cada aluno, leia a nota (0 a 10). Informe quantos alunos estão aprovados (nota >= 7), em recuperação (nota >= 5 e < 7) e reprovados (nota < 5).
-            
-            }
+            Scanner alunos = new Scanner(System.in);
+        int cont = 0;
+        int aprovados;
+        int recuperados;
+        int reprovados;
+        System.out.println("DIGITE A QUANTIDADE DE ALUNOS: ");
+        int num = alunos.nextInt();
+        for (int i = 1; i <= num; i++) {
+            System.out.println("Coloque as notas do aluno " + i + ": ");
+            int notas = alunos.nextInt();
         }
+        if (cont == num) {
+
+        }
+        
+    }
+}
