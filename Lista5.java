@@ -233,6 +233,7 @@ package treino;
             System.out.println("------------RESULTADOS DOS " + num + " ALUNOS------------");
             System.out.println( aprovados + " alunos aprovados ");
             System.out.println( recuperados + " alunos em recuperação");
+            System.out.println( reprovados + " alunos reprovados");
 
 
 
