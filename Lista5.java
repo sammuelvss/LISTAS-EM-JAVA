@@ -212,7 +212,7 @@ package treino;
             int reprovados = 0;
             System.out.println("DIGITE A QUANTIDADE DE ALUNOS: ");
             int num = alunos.nextInt();
-            int notas = 0;
+            int notas;
             for (int i = 1; i <= num; i++) {
                 System.out.println("Coloque a nota do aluno " + i + ": ");
                 notas = alunos.nextInt();
